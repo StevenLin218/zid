@@ -422,19 +422,20 @@ section { padding: var(--section-gap) 40px; }
 .contact-grid {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  align-items: center;
+  gap: 16px;
+  max-width: 420px;
+  margin: 0 auto;
 }
 .contact-item {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 20px 40px;
+  padding: 18px 24px;
   background: rgba(255,255,255,0.02);
   border: 1px solid rgba(197,165,90,0.1);
   border-radius: 4px;
-  min-width: 340px;
   transition: all 0.3s;
+  text-align: left;
 }
 .contact-item:hover {
   border-color: var(--gold);
@@ -442,16 +443,17 @@ section { padding: var(--section-gap) 40px; }
 }
 .contact-icon {
   color: var(--gold);
-  font-size: 0.9rem;
-  width: 24px;
+  font-size: 1.1rem;
+  width: 28px;
   text-align: center;
+  flex-shrink: 0;
 }
 .contact-text {
-  font-size: 1.25rem;
-  letter-spacing: 2px;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
 }
 .contact-label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--warm-gray);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -530,7 +532,7 @@ footer p {
   .roles { padding: 40px 24px; }
   .role-grid { grid-template-columns: 1fr; }
   .about-stats { grid-template-columns: 1fr; gap: 24px; }
-  .contact-item { min-width: auto; width: 100%; }
+  .contact-grid { max-width: 100%; }
   .hero-name { letter-spacing: 6px; }
 }
 </style>
@@ -792,6 +794,13 @@ footer p {
         <div>
           <div class="contact-text">a07132250@gmail.com</div>
           <div class="contact-label">Email</div>
+        </div>
+      </a>
+      <a href="https://line.me/ti/p/WmoWVRrxEW#~" target="_blank" rel="noopener" class="contact-item" style="text-decoration:none;color:inherit;">
+        <div class="contact-icon">&#9679;</div>
+        <div>
+          <div class="contact-text">加好友</div>
+          <div class="contact-label">Line</div>
         </div>
       </a>
     </div>
